@@ -3,6 +3,7 @@ package com.yiyang.singleton;
 /**
  * lazy loading
  * multi-thread safe
+ * drawBack: not efficient
  */
 public class Mgr04 {
     private static Mgr04 INSTANCE;
