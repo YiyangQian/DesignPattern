@@ -22,5 +22,12 @@ public class Main {
         System.out.println(Arrays.toString(cats));
         catSorter.sort(cats, new CatHeightComparator());
         System.out.println(Arrays.toString(cats));
+
+        catSorter.sort(cats, (cat1, cat2) -> {
+            if (cat1.weight * cat1.height > cat2.weight * cat2.height) return -1;
+            else if (cat1.weight * cat1.height < cat2.weight * cat2.height) return 1;
+            else return 0;
+        });
+        System.out.println(Arrays.toString(cats));
     }
 }
