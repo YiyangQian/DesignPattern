@@ -1,4 +1,4 @@
-package com.yiyang.strategy;
+package com.yiyang.strategy.comparable;
 
 public class Sorter {
 
